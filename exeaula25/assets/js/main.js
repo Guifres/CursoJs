@@ -1,5 +1,9 @@
+// Capturar Submit do Formulario
+con
+
+
 function Calcular(){
-    let peso = document.getElementById('peso').valeu
+    let peso = document.getElementById('peso').value
     let altura = document.getElementById('altura').value
     let resultado = document.getElementById('resultado')
     let Peso = Number(peso)
@@ -9,5 +13,5 @@ function Calcular(){
     let imc = Peso / (Altura * Altura)
     
 
-    resultado.innerHTML = `<p>Seu peso e Altura ${Peso}<p/>`
+    resultado.innerHTML = `<p>Seu IMC é ${imc}<p/>`
 }
