@@ -5,4 +5,5 @@ const nome = [
     'Joana'
 ];
 
-console.log(nome[1])
+nome.push('Guilherme')
+console.log(nome)
