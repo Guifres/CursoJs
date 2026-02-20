@@ -1,23 +1,17 @@
 // Filter, map, reduce
 
-//Retorne os numeros maiores que 10
-const numeros = [5, 50, 80, 1, 2, 3, 4, 5, 6, 7, 11, 15, 22, 27]
-let maior10 = []
-for(numero of numeros){
-    if(numero >= 10){
-        maior10++
-    }
-}
+//Retorne os numeros maiores que 10                             
+//const numeros = [5, 50, 80, 1, 2, 3, 4, 5, 6, 7, 11, 15, 22, 27]
 
-console.log(maior10)
+//function callbackFilter(valor, indice, array){
+    //return valor > 10;
+      
+
+///}
 
 
-
-
-
-
-
-
+//const numerosFiltrados = numeros.filter(callbackFilter);
+//console.log(numerosFiltrados)
 
 
 
@@ -34,3 +28,13 @@ const pessoas = [
     {nome: 'Rosana', idade: 32},
     {nome: 'Wallace', idade: 47}
 ]
+
+const pessoasComNomeGrande = pessoas.filter(obj => obj.nome.length >= 5);
+const pessoasComMaisDeCinquentaAnos = pessoas.filter(obj => obj.idade > 50)
+const nomeTerminaComA = pessoas.filter(function(obj){
+    return obj.nome.toLowerCase().endsWith('a');
+})
+
+console.log(pessoasComNomeGrande)
+console.log(pessoasComMaisDeCinquentaAnos)
+console.log(nomeTerminaComA)
